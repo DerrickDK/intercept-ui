@@ -14,6 +14,8 @@ import { GuideComponent } from './guide/guide.component';
 import { AlertComponent } from './common/alert/alert.component';
 import { NavComponent } from './common/nav/nav.component';
 
+import { AjaxService } from './services/ajax.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +35,7 @@ import { NavComponent } from './common/nav/nav.component';
   entryComponents: [
     AlertComponent
   ],
-  providers: [],
+  providers: [AjaxService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

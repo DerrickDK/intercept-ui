@@ -1,5 +1,24 @@
 <div id="home-component">
   <h3>Welcome to Intercept</h3>
-  <p> test
+
+  <div>
+    <div class="list-groups">
+      <a target="_blank" [href]="'http://' + org.contact_info.website" class="list-group-item" *ngFor="let org of organizations">
+        <h4 class="list-group-item-heading">{{org.name}}</h4>
+        <div class="list-group-item-text">
+          {{org.contact_info.email}}
+          {{org.contact_info.hotline.number}}
+
+        </div>
+        <p class="list-group-item-text">
+          {{org.mission_statement}}
+          <span class="item-title">
+
+          </span>
+          <span class="item-value"></span>
+        </p>
+      </a>
+    </div>
+  </div>
 
 </div>
