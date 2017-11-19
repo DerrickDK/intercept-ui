@@ -17,6 +17,7 @@ import { UsersComponent } from './users/users.component';
 import { SurveyComponent } from './survey/survey.component';
 import { SurveyFormComponent } from './common/survey-form/survey-form.component';
 import { TabsComponent } from './common/tabs/tabs.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { TabsComponent } from './common/tabs/tabs.component';
     UsersComponent,
     SurveyComponent,
     SurveyFormComponent,
-    TabsComponent
+    TabsComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
